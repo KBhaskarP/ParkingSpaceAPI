@@ -30,6 +30,7 @@ class parking_space:
         else:
             return jsonify(result)
         
+        
     def get_records(self,sts):
         if sts not in ('Done','In_progress'):
             return 'Invalid Status Code, Use "Done" or "In_progress" only'
@@ -41,10 +42,12 @@ class parking_space:
         else:
             query=(f'SELECT * FROM parking_log WHERE status="{sts}"')
             df=pd.read_sql_query(query,self.conn)
-            df.to_csv('records.csv',index=False) 
+            df.to_csv(r'C:\Users\HP\Desktop\Pk_space\Logs\Records.csv',index=False) 
             self.conn.close()
-            return send_file('records.csv',as_attachment=True)
+            return send_file('Logs\Records.csv',as_attachment=True)
             # return jsonify(result)
+            
+            
         
     def insert_records(self,Driver,Car_num,Entry_time,Entry_date,Exit_time,Exit_date,Status):
         self.cursor.execute('SELECT * FROM parking_log WHERE car_number=? AND status=?',(Car_num,"In_progress"))

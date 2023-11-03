@@ -1,0 +1,90 @@
+GET
+# if request.method == 'GET':
+    # logging.info(f"{current_datetime}---Table Accessed | Request Path:{request.path}")
+    # output=dbase.get_table()
+    # dbase.close_connection()
+    # return output
+
+POST
+# dbase=parking_space('logs.db')
+    # current_datetime=datetime.now()
+    
+        
+    # if request.method=="POST":
+        
+    #     name=request.form['driver']
+    #     car_number=request.form['CarNumber']
+        
+    #     try:
+    #         validator=form_validation(car_number,name)
+    #     except ValueError as e:
+    #         logging.critical(f"{current_datetime} Validation Error | Request Path:{request.path}")
+    #         return str(e)
+    #     else:
+    #         entry_time=str(current_datetime.time())[:5]
+    #         entry_date=str(current_datetime.date())
+    #         exit_time=None
+    #         exit_date=None
+    #         status="In_progress"
+    #         output=dbase.insert_records(name,car_number,entry_time,entry_date,exit_time,exit_date,status)
+    #         logging.info(f"{current_datetime}---Table Updated With New Record | Request Path:{request.path}")
+    #         dbase.close_connection()
+    #         return output
+
+#PUT
+
+# current_datetime=datetime.now()  
+    # if request.method=="DELETE":
+    #     rec_id=request.form['id']
+    #     try:
+    #         validator=id_validation(rec_id)
+    #     except ValueError as e:
+    #         logging.critical(f"{current_datetime} Validation Error | Request Path:{request.path}")
+    #         return str(e)
+    #     else:
+    #         output=dbase.delete_records(rec_id)
+    #         if "Sucessfully deleted" in output:
+    #             logging.info(f"{current_datetime}---Record with ID: {rec_id} Deleted | Request Path:{request.path}")
+    #             dbase.close_connection()
+    #             return output
+    #         else:
+    #             logging.critical(f"{current_datetime}--- Logged in record with ID: {rec_id} attempted to delete | Request Path:{request.path}")
+        
+    return "Invalid Response"
+
+#DELETE single
+ # rec_id=request.json.get("id")
+        # output=dbase.delete_multiple_records(*rec_id)
+        # if "cannot be deleted" in output:
+            
+        #     logging.critical(f"{datetime.now()} Logged in Records attempted to Delete | Request Path:{request.path}")
+        #     dbase.close_connection()
+            
+        # else:
+            
+        #     logging.info(f"{datetime.now()}---Multiple Records Deleted | Request Path:{request.path}")
+        #     dbase.close_connection()
+        #     return output
+        
+    return "Invalid Response"
+
+DELETE Multiple
+        rec_id=request.json.get("id")
+        output=self.dbase.delete_multiple_records(*rec_id)
+        if "cannot be deleted" in output:
+            
+            logging.critical(f"{datetime.now()} Logged in Records attempted to Delete | Request Path:{request.path}")
+            dbase.close_connection()
+            
+        else:
+            
+            logging.info(f"{datetime.now()}---Multiple Records Deleted | Request Path:{self.request.path}")
+            dbase.close_connection()
+            return output
+
+DOWNLOAD
+# if request.method == 'POST':
+    #     stat=request.form['status']
+    #     dbase.get_records(stat)
+    #     logging.critical(f"{datetime.now()} Records with Status:{stat} downloaded | Request Path:{request.path}")
+    #     return "Downloaded Successfully"
