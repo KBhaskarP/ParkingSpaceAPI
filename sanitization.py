@@ -23,7 +23,7 @@ class form_validation():
         
     def car_num_validate(self,car_data):
         word_pattern=r'^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$'
-        # num_pattern=r'^[A-Z]{2}\d{8}$'
+    
         if not (re.match(word_pattern,car_data)):
             raise ValueError("Invalid Car Number")
     
