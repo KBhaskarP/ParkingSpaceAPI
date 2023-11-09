@@ -188,3 +188,205 @@
 2023-11-04 03:37:50,780 - INFO -  * Debugger PIN: 929-523-107
 2023-11-04 03:38:28,251 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Authentication\\auth.py', reloading
 2023-11-04 03:38:28,411 - INFO -  * Restarting with stat
+2023-11-09 02:22:39,995 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-09 02:22:39,996 - INFO - [33mPress CTRL+C to quit[0m
+2023-11-09 02:22:39,999 - INFO -  * Restarting with stat
+2023-11-09 02:22:42,123 - WARNING -  * Debugger is active!
+2023-11-09 02:22:42,159 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:26:35,707 - INFO - 127.0.0.1 - - [09/Nov/2023 02:26:35] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2023-11-09 02:29:10,241 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\sanitization.py', reloading
+2023-11-09 02:29:11,282 - INFO -  * Restarting with stat
+2023-11-09 02:29:13,746 - WARNING -  * Debugger is active!
+2023-11-09 02:29:13,755 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:29:34,194 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\sanitization.py', reloading
+2023-11-09 02:29:34,655 - INFO -  * Restarting with stat
+2023-11-09 02:29:37,887 - WARNING -  * Debugger is active!
+2023-11-09 02:29:37,903 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:29:38,666 - INFO - 127.0.0.1 - - [09/Nov/2023 02:29:38] "POST /signup HTTP/1.1" 200 -
+2023-11-09 02:30:40,951 - INFO - 2023-11-09 02:30:40.939593---Table Accessed | Request Path:/parkinglog
+2023-11-09 02:30:40,968 - INFO - 127.0.0.1 - - [09/Nov/2023 02:30:40] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 02:41:40,790 - INFO - 2023-11-09 02:41:40.771885---Company Table Updated With New Record | Request Path:/EntryCompanyLog
+2023-11-09 02:41:40,979 - INFO - 127.0.0.1 - - [09/Nov/2023 02:41:40] "[35m[1mPOST /EntryCompanyLog HTTP/1.1[0m" 500 -
+2023-11-09 02:42:32,079 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 02:42:33,667 - INFO -  * Restarting with stat
+2023-11-09 02:42:38,988 - WARNING -  * Debugger is active!
+2023-11-09 02:42:39,020 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:42:50,265 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 02:42:50,731 - INFO -  * Restarting with stat
+2023-11-09 02:42:53,683 - WARNING -  * Debugger is active!
+2023-11-09 02:42:53,694 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:43:08,965 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 02:43:09,126 - INFO -  * Restarting with stat
+2023-11-09 02:43:11,329 - WARNING -  * Debugger is active!
+2023-11-09 02:43:11,346 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:43:37,983 - INFO - 2023-11-09 02:43:37.983964---Company Table Updated With New Record | Request Path:/EntryCompanyLog
+2023-11-09 02:43:37,985 - INFO - 127.0.0.1 - - [09/Nov/2023 02:43:37] "POST /EntryCompanyLog HTTP/1.1" 200 -
+2023-11-09 02:43:46,918 - INFO - 127.0.0.1 - - [09/Nov/2023 02:43:46] "[31m[1mGET /EntryCompanyLog HTTP/1.1[0m" 405 -
+2023-11-09 02:44:22,950 - INFO - 2023-11-09 02:44:22.950789---Company Table Accessed | Request Path:/companylog
+2023-11-09 02:44:22,951 - INFO - 127.0.0.1 - - [09/Nov/2023 02:44:22] "GET /companylog HTTP/1.1" 200 -
+2023-11-09 02:45:18,900 - INFO - 2023-11-09 02:45:18.877769---Table Updated With New Record | Request Path:/EntryParkinglog
+2023-11-09 02:45:18,901 - INFO - 127.0.0.1 - - [09/Nov/2023 02:45:18] "POST /EntryParkinglog HTTP/1.1" 200 -
+2023-11-09 02:45:37,957 - INFO - 2023-11-09 02:45:37.957175---Table Accessed | Request Path:/parkinglog
+2023-11-09 02:45:37,957 - INFO - 127.0.0.1 - - [09/Nov/2023 02:45:37] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 02:47:15,207 - CRITICAL - 2023-11-09 02:47:15.205180--- Logged in record with ID: 1 attempted to delete | Request Path:/DeleteParkinglog
+2023-11-09 02:47:15,208 - INFO - 127.0.0.1 - - [09/Nov/2023 02:47:15] "DELETE /DeleteParkinglog HTTP/1.1" 200 -
+2023-11-09 02:48:31,802 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 02:48:33,150 - INFO -  * Restarting with stat
+2023-11-09 02:48:36,407 - WARNING -  * Debugger is active!
+2023-11-09 02:48:36,443 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:50:21,401 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 02:50:21,796 - INFO -  * Restarting with stat
+2023-11-09 02:50:25,409 - WARNING -  * Debugger is active!
+2023-11-09 02:50:25,419 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:51:27,679 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Repository\\parking_log.py', reloading
+2023-11-09 02:51:27,992 - INFO -  * Restarting with stat
+2023-11-09 02:51:31,149 - WARNING -  * Debugger is active!
+2023-11-09 02:51:31,156 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:51:38,202 - INFO - 2023-11-09 02:51:38.176775---Table Updated With New Record | Request Path:/EntryParkinglog
+2023-11-09 02:51:38,204 - INFO - 127.0.0.1 - - [09/Nov/2023 02:51:38] "POST /EntryParkinglog HTTP/1.1" 200 -
+2023-11-09 02:51:47,071 - INFO - 2023-11-09 02:51:47.071366---Table Accessed | Request Path:/parkinglog
+2023-11-09 02:51:47,072 - INFO - 127.0.0.1 - - [09/Nov/2023 02:51:47] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 02:54:24,816 - INFO - 2023-11-09 02:54:24.803227---Record with ID: 2 Modified | Request Path:/UpdateParkinglog
+2023-11-09 02:54:24,845 - INFO - 127.0.0.1 - - [09/Nov/2023 02:54:24] "[35m[1mPUT /UpdateParkinglog HTTP/1.1[0m" 500 -
+2023-11-09 02:55:07,294 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Repository\\parking_log.py', reloading
+2023-11-09 02:55:07,539 - INFO -  * Restarting with stat
+2023-11-09 02:55:10,598 - WARNING -  * Debugger is active!
+2023-11-09 02:55:10,620 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:55:12,318 - INFO - 2023-11-09 02:55:12.306591---Record with ID: 2 Modified | Request Path:/UpdateParkinglog
+2023-11-09 02:55:12,322 - INFO - 127.0.0.1 - - [09/Nov/2023 02:55:12] "PUT /UpdateParkinglog HTTP/1.1" 200 -
+2023-11-09 02:56:33,220 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 02:56:33,612 - INFO -  * Restarting with stat
+2023-11-09 02:56:37,544 - WARNING -  * Debugger is active!
+2023-11-09 02:56:37,558 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 02:56:44,568 - INFO - 2023-11-09 02:56:44.568436---Table Accessed | Request Path:/parkinglog
+2023-11-09 02:56:44,569 - INFO - 127.0.0.1 - - [09/Nov/2023 02:56:44] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 02:57:18,012 - INFO - 2023-11-09 02:57:17.993918---Table Updated With New Record | Request Path:/EntryParkinglog
+2023-11-09 02:57:18,012 - INFO - 127.0.0.1 - - [09/Nov/2023 02:57:18] "POST /EntryParkinglog HTTP/1.1" 200 -
+2023-11-09 02:57:31,838 - INFO - 2023-11-09 02:57:31.837093---Table Accessed | Request Path:/parkinglog
+2023-11-09 02:57:31,839 - INFO - 127.0.0.1 - - [09/Nov/2023 02:57:31] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 02:57:52,380 - INFO - 2023-11-09 02:57:52.367931---Record with ID: 3 Modified | Request Path:/UpdateParkinglog
+2023-11-09 02:57:52,386 - INFO - 127.0.0.1 - - [09/Nov/2023 02:57:52] "PUT /UpdateParkinglog HTTP/1.1" 200 -
+2023-11-09 02:59:20,438 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 02:59:21,579 - INFO -  * Restarting with stat
+2023-11-09 02:59:24,737 - WARNING -  * Debugger is active!
+2023-11-09 02:59:24,754 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:08:25,427 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:08:26,667 - INFO -  * Restarting with stat
+2023-11-09 03:08:30,907 - WARNING -  * Debugger is active!
+2023-11-09 03:08:30,938 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:10:45,397 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:10:47,692 - INFO -  * Restarting with stat
+2023-11-09 03:10:51,677 - WARNING -  * Debugger is active!
+2023-11-09 03:10:51,700 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:15:39,092 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:15:40,398 - INFO -  * Restarting with stat
+2023-11-09 03:15:43,083 - WARNING -  * Debugger is active!
+2023-11-09 03:15:43,097 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:16:04,512 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:16:04,791 - INFO -  * Restarting with stat
+2023-11-09 03:16:06,643 - WARNING -  * Debugger is active!
+2023-11-09 03:16:06,652 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:20:49,183 - INFO - 2023-11-09 03:20:49.175496---Table Accessed | Request Path:/parkinglog
+2023-11-09 03:20:49,202 - INFO - 127.0.0.1 - - [09/Nov/2023 03:20:49] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 03:25:42,091 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:25:43,120 - INFO -  * Restarting with stat
+2023-11-09 03:25:45,946 - WARNING -  * Debugger is active!
+2023-11-09 03:25:45,967 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:39:31,565 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:39:34,135 - INFO -  * Restarting with stat
+2023-11-09 03:39:38,846 - WARNING -  * Debugger is active!
+2023-11-09 03:39:38,890 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:42:15,742 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:42:16,537 - INFO -  * Restarting with stat
+2023-11-09 03:42:19,404 - WARNING -  * Debugger is active!
+2023-11-09 03:42:19,429 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:42:36,777 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:42:37,081 - INFO -  * Restarting with stat
+2023-11-09 03:42:40,778 - WARNING -  * Debugger is active!
+2023-11-09 03:42:40,796 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:44:34,867 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 03:44:35,854 - INFO -  * Restarting with stat
+2023-11-09 03:44:39,469 - WARNING -  * Debugger is active!
+2023-11-09 03:44:39,495 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:44:46,657 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 03:44:46,879 - INFO -  * Restarting with stat
+2023-11-09 03:44:49,686 - WARNING -  * Debugger is active!
+2023-11-09 03:44:49,703 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:45:18,194 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 03:45:18,435 - INFO -  * Restarting with stat
+2023-11-09 03:45:22,719 - WARNING -  * Debugger is active!
+2023-11-09 03:45:22,734 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:46:06,533 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 03:46:06,757 - INFO -  * Restarting with stat
+2023-11-09 03:46:08,876 - WARNING -  * Debugger is active!
+2023-11-09 03:46:08,881 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:48:54,018 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:48:54,311 - INFO -  * Restarting with stat
+2023-11-09 03:48:56,492 - WARNING -  * Debugger is active!
+2023-11-09 03:48:56,505 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:53:43,701 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-09 03:53:44,856 - INFO -  * Restarting with stat
+2023-11-09 03:53:47,916 - WARNING -  * Debugger is active!
+2023-11-09 03:53:47,936 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:53:55,095 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\payment\\send_bill.py', reloading
+2023-11-09 03:53:55,453 - INFO -  * Restarting with stat
+2023-11-09 03:53:58,762 - WARNING -  * Debugger is active!
+2023-11-09 03:53:58,769 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 03:54:13,212 - INFO - 2023-11-09 03:54:13.212772---Company Table Accessed | Request Path:/companylog
+2023-11-09 03:54:13,214 - INFO - 127.0.0.1 - - [09/Nov/2023 03:54:13] "GET /companylog HTTP/1.1" 200 -
+2023-11-09 03:56:08,631 - INFO - 2023-11-09 03:56:08.631670---Company Table Updated With New Record | Request Path:/EntryCompanyLog
+2023-11-09 03:56:08,632 - INFO - 127.0.0.1 - - [09/Nov/2023 03:56:08] "POST /EntryCompanyLog HTTP/1.1" 200 -
+2023-11-09 03:56:14,462 - INFO - 2023-11-09 03:56:14.461965---Company Table Accessed | Request Path:/companylog
+2023-11-09 03:56:14,462 - INFO - 127.0.0.1 - - [09/Nov/2023 03:56:14] "GET /companylog HTTP/1.1" 200 -
+2023-11-09 03:57:11,989 - INFO - 2023-11-09 03:57:11.975564---Table Updated With New Record | Request Path:/EntryParkinglog
+2023-11-09 03:57:11,989 - INFO - 127.0.0.1 - - [09/Nov/2023 03:57:11] "POST /EntryParkinglog HTTP/1.1" 200 -
+2023-11-09 03:57:24,046 - INFO - 2023-11-09 03:57:24.046551---Table Accessed | Request Path:/parkinglog
+2023-11-09 03:57:24,047 - INFO - 127.0.0.1 - - [09/Nov/2023 03:57:24] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 03:58:09,709 - INFO - 2023-11-09 03:58:09.709891---Table Accessed | Request Path:/parkinglog
+2023-11-09 03:58:09,710 - INFO - 127.0.0.1 - - [09/Nov/2023 03:58:09] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 03:58:30,484 - INFO - 2023-11-09 03:58:30.474241---Record with ID: 4 Modified | Request Path:/UpdateParkinglog
+2023-11-09 03:58:31,053 - INFO - -- BEGIN Twilio API Request --
+2023-11-09 03:58:31,054 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/ACc70c64f97435dab79762b6f88e9062eb/Messages.json
+2023-11-09 03:58:31,054 - INFO - Headers:
+2023-11-09 03:58:31,054 - INFO - User-Agent : twilio-python/8.9.0 (Windows AMD64) Python/3.11.0
+2023-11-09 03:58:31,054 - INFO - X-Twilio-Client : python-8.9.0
+2023-11-09 03:58:31,054 - INFO - Accept-Charset : utf-8
+2023-11-09 03:58:31,054 - INFO - Content-Type : application/x-www-form-urlencoded
+2023-11-09 03:58:31,054 - INFO - Accept : application/json
+2023-11-09 03:58:31,054 - INFO - -- END Twilio API Request --
+2023-11-09 04:00:41,278 - INFO - 2023-11-09 04:00:41.277797---Table Accessed | Request Path:/parkinglog
+2023-11-09 04:00:41,278 - INFO - 127.0.0.1 - - [09/Nov/2023 04:00:41] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-09 04:00:41,451 - INFO - Response Status Code: 201
+2023-11-09 04:00:41,451 - INFO - Response Headers: {'Date': 'Wed, 08 Nov 2023 22:30:41 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1401', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQf6ffd6d511b742c5c994ac3f91a9c9eb', 'Twilio-Request-Duration': '0.343', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'X-Powered-By': 'AT-5000', 'Strict-Transport-Security': 'max-age=31536000', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+2023-11-09 04:00:41,455 - INFO - 127.0.0.1 - - [09/Nov/2023 04:00:41] "PUT /UpdateParkinglog HTTP/1.1" 200 -
+2023-11-09 04:04:47,725 - INFO - 127.0.0.1 - - [09/Nov/2023 04:04:47] "POST /signup HTTP/1.1" 200 -
+2023-11-09 04:06:53,376 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Authentication\\auth.py', reloading
+2023-11-09 04:06:54,770 - INFO -  * Restarting with stat
+2023-11-09 04:06:58,747 - WARNING -  * Debugger is active!
+2023-11-09 04:06:58,775 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 04:07:53,779 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Authentication\\auth.py', reloading
+2023-11-09 04:07:54,179 - INFO -  * Restarting with stat
+2023-11-09 04:07:56,624 - WARNING -  * Debugger is active!
+2023-11-09 04:07:56,637 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 04:08:52,755 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Authentication\\auth.py', reloading
+2023-11-09 04:08:53,082 - INFO -  * Restarting with stat
+2023-11-09 04:08:54,991 - WARNING -  * Debugger is active!
+2023-11-09 04:08:54,996 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 04:13:19,809 - INFO - 127.0.0.1 - - [09/Nov/2023 04:13:19] "POST /signup HTTP/1.1" 200 -
+2023-11-09 04:17:04,119 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\sanitization.py', reloading
+2023-11-09 04:17:05,580 - INFO -  * Restarting with stat
+2023-11-09 04:17:08,959 - WARNING -  * Debugger is active!
+2023-11-09 04:17:08,973 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 04:18:39,686 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Authentication\\security.py', reloading
+2023-11-09 04:18:39,964 - INFO -  * Restarting with stat
+2023-11-09 04:18:42,923 - WARNING -  * Debugger is active!
+2023-11-09 04:18:42,931 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 04:18:56,841 - INFO - 127.0.0.1 - - [09/Nov/2023 04:18:56] "POST /signup HTTP/1.1" 200 -
+2023-11-09 04:19:19,066 - INFO - 127.0.0.1 - - [09/Nov/2023 04:19:19] "POST /signup HTTP/1.1" 200 -
+2023-11-09 04:19:49,226 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\Authentication\\security.py', reloading
+2023-11-09 04:19:49,710 - INFO -  * Restarting with stat
+2023-11-09 04:19:52,145 - WARNING -  * Debugger is active!
+2023-11-09 04:19:52,160 - INFO -  * Debugger PIN: 929-523-107
+2023-11-09 04:21:23,088 - INFO - 127.0.0.1 - - [09/Nov/2023 04:21:23] "POST /signup HTTP/1.1" 200 -
+2023-11-09 04:21:34,308 - INFO - 127.0.0.1 - - [09/Nov/2023 04:21:34] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -

@@ -8,8 +8,8 @@ logging.basicConfig(filename=r'C:\Users\HP\Desktop\Pk_space\Logs\access.log', le
 
 
 class security_verification():
-    def __init__(self,dbname,path):
-        self.path=path
+    def __init__(self,dbname):
+        # self.path=path
         self.conn=sqlite3.connect(dbname)
         self.cursor=self.conn.cursor()
         
@@ -32,19 +32,19 @@ class security_verification():
             self.cursor.execute('SELECT * FROM user_log_details WHERE usernames=?',(name,))
             already_present=self.cursor.fetchone()
             if already_present:
-                return False
+                return "Username already present,Please enter another one"
             else:
                 self.cursor.execute('INSERT INTO user_log_details(usernames, password) VALUES(?,?)',(name, key))
                 self.conn.commit()
-                return True
+                return "Signed Up Successfully"
     
     def user_login_check(self,name,key):
         self.cursor.execute("SELECT * from user_log_details WHERE usernames=? and password=?",(name,key))   
         log=self.cursor.fetchone()
         if not log:
-            return False
+            return "User not found, Please Sign Up"
         else:
-            return True
+            return "logged in successfully"
         
         
         

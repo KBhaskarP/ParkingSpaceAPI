@@ -1,7 +1,7 @@
 import sqlite3
 from flask import jsonify,send_file
 import pandas as pd
-
+from Repository.company_log import company_details
 
 class parking_space:
     def __init__(self,db_name):
@@ -17,10 +17,20 @@ class parking_space:
             entry_date TEXT,
             exit_time TEXT,
             exit_date TEXT,
+            company_num INTEGER,
             status TEXT
+            
             
             )''')
         self.conn.commit()
+    def customer_details(self,rec_id):
+        self.cursor.execute('SELECT driver,car_number,entry_time,exit_time,entry_date, exit_date,company_num FROM parking_log WHERE id=?',(rec_id,))
+        result=self.cursor.fetchone()
+        if result:
+            Driver_name,Number_plate,Time_of_entry,Time_of_exit,Date_of_entry,Date_of_exit,Company_Token=result
+            return Driver_name,Number_plate,Time_of_entry,Time_of_exit,Date_of_entry,Date_of_exit,Company_Token
+        else:
+            return "No Relevant Information Found"
         
     def get_table(self):
         self.cursor.execute('SELECT * FROM parking_log')
@@ -49,11 +59,11 @@ class parking_space:
             
             
         
-    def insert_records(self,Driver,Car_num,Entry_time,Entry_date,Exit_time,Exit_date,Status):
+    def insert_records(self,Driver,Car_num,Entry_time,Entry_date,Exit_time,Exit_date,Number,Status):
         self.cursor.execute('SELECT * FROM parking_log WHERE car_number=? AND status=?',(Car_num,"In_progress"))
         output=self.cursor.fetchall()
         if not output:
-            self.cursor.execute('INSERT INTO parking_log (driver,car_number,entry_time,entry_date,exit_time,exit_date,status) VALUES (?,?,?,?,?,?,?)',(Driver,Car_num,Entry_time,Entry_date,Exit_time,Exit_date,Status))
+            self.cursor.execute('INSERT INTO parking_log (driver,car_number,entry_time,entry_date,exit_time,exit_date,company_num,status) VALUES (?,?,?,?,?,?,?,?)',(Driver,Car_num,Entry_time,Entry_date,Exit_time,Exit_date,Number,Status))
             self.conn.commit()
             return "Added Successfully"
         else:
@@ -67,6 +77,8 @@ class parking_space:
                             WHERE id=?''',(Exit_time,Exit_date,"Done",Record_id))
         self.conn.commit()
         return "Record Update Successfully"
+    
+    
     
     def delete_records(self,Record_id):
         self.cursor.execute('SELECT status from parking_log WHERE id=?',(Record_id,))
