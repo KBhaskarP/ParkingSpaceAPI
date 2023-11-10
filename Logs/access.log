@@ -390,3 +390,47 @@
 2023-11-09 04:19:52,160 - INFO -  * Debugger PIN: 929-523-107
 2023-11-09 04:21:23,088 - INFO - 127.0.0.1 - - [09/Nov/2023 04:21:23] "POST /signup HTTP/1.1" 200 -
 2023-11-09 04:21:34,308 - INFO - 127.0.0.1 - - [09/Nov/2023 04:21:34] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2023-11-10 15:48:10,881 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-10 15:48:10,882 - INFO - [33mPress CTRL+C to quit[0m
+2023-11-10 15:48:10,890 - INFO -  * Restarting with stat
+2023-11-10 15:48:13,588 - WARNING -  * Debugger is active!
+2023-11-10 15:48:13,614 - INFO -  * Debugger PIN: 929-523-107
+2023-11-10 15:50:15,596 - INFO - 127.0.0.1 - - [10/Nov/2023 15:50:15] "POST /signup HTTP/1.1" 200 -
+2023-11-10 15:51:19,349 - INFO - 127.0.0.1 - - [10/Nov/2023 15:51:19] "[35m[1mGET /parkinglog HTTP/1.1[0m" 500 -
+2023-11-10 15:51:36,792 - INFO - 127.0.0.1 - - [10/Nov/2023 15:51:36] "[35m[1mGET /parkinglog HTTP/1.1[0m" 500 -
+2023-11-10 15:52:57,075 - INFO - 2023-11-10 15:52:57.070792---Table Accessed | Request Path:/parkinglog
+2023-11-10 15:52:57,077 - INFO - 127.0.0.1 - - [10/Nov/2023 15:52:57] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-10 15:53:44,371 - INFO - 2023-11-10 15:53:44.371870---Company Table Accessed | Request Path:/companylog
+2023-11-10 15:53:44,371 - INFO - 127.0.0.1 - - [10/Nov/2023 15:53:44] "GET /companylog HTTP/1.1" 200 -
+2023-11-10 15:54:52,677 - INFO - 127.0.0.1 - - [10/Nov/2023 15:54:52] "[35m[1mPOST /EntryParkinglog HTTP/1.1[0m" 500 -
+2023-11-10 15:56:40,061 - INFO - 2023-11-10 15:56:40.039451---Table Updated With New Record | Request Path:/EntryParkinglog
+2023-11-10 15:56:40,062 - INFO - 127.0.0.1 - - [10/Nov/2023 15:56:40] "POST /EntryParkinglog HTTP/1.1" 200 -
+2023-11-10 15:56:51,806 - INFO - 2023-11-10 15:56:51.806067---Table Accessed | Request Path:/parkinglog
+2023-11-10 15:56:51,807 - INFO - 127.0.0.1 - - [10/Nov/2023 15:56:51] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-10 15:58:37,912 - INFO - 127.0.0.1 - - [10/Nov/2023 15:58:37] "[35m[1mPUT /UpdateParkinglog HTTP/1.1[0m" 500 -
+2023-11-10 16:00:33,401 - INFO - 2023-11-10 16:00:33.384496---Record with ID: 5 Modified | Request Path:/UpdateParkinglog
+2023-11-10 16:00:34,313 - INFO - -- BEGIN Twilio API Request --
+2023-11-10 16:00:34,313 - INFO - POST Request: https://api.twilio.com/2010-04-01/Accounts/ACc70c64f97435dab79762b6f88e9062eb/Messages.json
+2023-11-10 16:00:34,313 - INFO - Headers:
+2023-11-10 16:00:34,314 - INFO - User-Agent : twilio-python/8.9.0 (Windows AMD64) Python/3.11.0
+2023-11-10 16:00:34,314 - INFO - X-Twilio-Client : python-8.9.0
+2023-11-10 16:00:34,314 - INFO - Accept-Charset : utf-8
+2023-11-10 16:00:34,315 - INFO - Content-Type : application/x-www-form-urlencoded
+2023-11-10 16:00:34,315 - INFO - Accept : application/json
+2023-11-10 16:00:34,315 - INFO - -- END Twilio API Request --
+2023-11-10 16:00:39,032 - INFO - Response Status Code: 201
+2023-11-10 16:00:39,033 - INFO - Response Headers: {'Date': 'Fri, 10 Nov 2023 10:30:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1411', 'Connection': 'keep-alive', 'Twilio-Request-Id': 'RQe51c21d91911864db77b31e555a030cb', 'Twilio-Request-Duration': '0.145', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Idempotency-Key', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS', 'Access-Control-Expose-Headers': 'ETag', 'Access-Control-Allow-Credentials': 'true', 'Twilio-Concurrent-Requests': '1', 'X-Shenanigans': 'none', 'X-Powered-By': 'AT-5000', 'X-Home-Region': 'us1', 'X-API-Domain': 'api.twilio.com'}
+2023-11-10 16:00:39,052 - INFO - 2023-11-10 16:00:39.052220---Bill Generated and Sent to Trial Name Company| id:SMe51c21d91911864db77b31e555a030cb
+2023-11-10 16:00:39,054 - INFO - 127.0.0.1 - - [10/Nov/2023 16:00:39] "PUT /UpdateParkinglog HTTP/1.1" 200 -
+2023-11-10 16:01:39,166 - INFO - 2023-11-10 16:01:39.166444---Table Accessed | Request Path:/parkinglog
+2023-11-10 16:01:39,166 - INFO - 127.0.0.1 - - [10/Nov/2023 16:01:39] "GET /parkinglog HTTP/1.1" 200 -
+2023-11-10 16:01:56,029 - INFO - 127.0.0.1 - - [10/Nov/2023 16:01:56] "[31m[1mDELETE /parkinglog HTTP/1.1[0m" 405 -
+2023-11-10 16:02:06,423 - CRITICAL - 2023-11-10 16:02:06.423827--- Logged in record with ID: 5 attempted to delete | Request Path:/DeleteParkinglog
+2023-11-10 16:02:06,423 - INFO - 127.0.0.1 - - [10/Nov/2023 16:02:06] "DELETE /DeleteParkinglog HTTP/1.1" 200 -
+2023-11-10 16:02:23,052 - INFO - 127.0.0.1 - - [10/Nov/2023 16:02:23] "[31m[1mDELETE /download HTTP/1.1[0m" 405 -
+2023-11-10 16:02:31,822 - INFO - 127.0.0.1 - - [10/Nov/2023 16:02:31] "[35m[1mPOST /download HTTP/1.1[0m" 500 -
+2023-11-10 16:03:08,426 - CRITICAL - 2023-11-10 16:03:08.426020 Records with Status:Done downloaded | Request Path:/download
+2023-11-10 16:03:08,427 - INFO - 127.0.0.1 - - [10/Nov/2023 16:03:08] "POST /download HTTP/1.1" 200 -
+2023-11-10 16:07:15,160 - INFO -  * Detected change in 'c:\\Users\\HP\\Desktop\\Pk_space\\api_action.py', reloading
+2023-11-10 16:07:16,978 - INFO -  * Restarting with stat

@@ -1,6 +1,6 @@
 from flask import Flask
 from Authentication.auth import security_verification
-from sanitization import details_validation
+from Data_Cleaning.sanitization import details_validation
 
 
 class verify_details():

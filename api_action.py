@@ -2,7 +2,7 @@ from flask import request
 from datetime import datetime
 from Repository.parking_log import parking_space
 from Repository.company_log import company_details
-from sanitization import form_validation,id_validation
+from Data_Cleaning.sanitization import form_validation,id_validation
 import logging
 from payment.send_bill import bill_payment
 
@@ -14,11 +14,11 @@ logging.basicConfig(filename=r'C:\Users\HP\Desktop\Pk_space\Logs\access.log', le
 class ActionHandling():
     def __init__(self,request,dbase,path):
         self.request = request
-        self.dbase=dbase
-        self.path=path
+        self.dbase = dbase
+        self.path = path
         
     def get_action(self):
-        output=self.dbase.get_table()
+        output = self.dbase.get_table()
         self.dbase.close_connection()
         logging.info(f"{datetime.now()}---Table Accessed | Request Path:{self.path}")
         return output
@@ -81,7 +81,7 @@ class ActionHandling():
             customer.close_connection()
             
             com=company_details('logs.db')
-            company_name, phone_number=com.company_info(company_token)
+            company_name, phone_number = com.company_info(company_token)
             com.close_connection()
             
             self.dbase.close_connection()

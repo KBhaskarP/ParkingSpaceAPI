@@ -1,6 +1,6 @@
 from flask import Flask,jsonify
 import sqlite3
-from sanitization import details_validation
+from Data_Cleaning.sanitization import details_validation
 import logging
 from datetime import datetime
 

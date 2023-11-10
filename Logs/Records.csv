@@ -1,2 +1,5 @@
-id,driver,car_number,entry_time,entry_date,exit_time,exit_date,status
-1,Vyomesh,BR12JK1001,05:19,2023-11-02,06:12,2023-11-02,Done
+id,driver,car_number,entry_time,entry_date,exit_time,exit_date,company_num,status
+2,Somesh,BR12JK1111,02:51,2023-11-09,02:55,2023-11-09,1,Done
+3,Bhaskar,BR12JK1112,02:57,2023-11-09,02:57,2023-11-09,1,Done
+4,Kumar,BR12JK5612,03:57,2023-11-09,03:58,2023-11-09,2,Done
+5,Test Driver,TE12ST1111,15:56,2023-11-10,16:00,2023-11-10,2,Done
