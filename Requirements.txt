@@ -1,0 +1,7 @@
+
+#pip install below packages before use
+
+Flask>=3.0.0
+pandas>=2.0.2
+requests>=2.31.0
+twilio==8.9.0

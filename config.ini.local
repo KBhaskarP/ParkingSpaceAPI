@@ -1,0 +1,4 @@
+[Credentials]
+DB_phone_number='twillio_phone_number'
+DB_SID="twillio_sid"
+DB_TOKEN='twillio_auth_token'

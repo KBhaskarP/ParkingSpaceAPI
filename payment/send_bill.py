@@ -1,15 +1,19 @@
 from twilio.rest import Client
 from datetime import datetime
 import logging
+import configparser
 
 
 logging.basicConfig(filename=r'C:\Users\HP\Desktop\Pk_space\Logs\access.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class bill_payment:
     def __init__(self):
-        self.sms_from='+12312254891'
-        self.sid="ACc70c64f97435dab79762b6f88e9062eb"
-        self.token='735e70b7a7f7c66623ade0cfac98a42e'
+        config = configparser.ConfigParser()
+        config.read('config.ini')
+
+        self.sms_from=config.get('Credentials', 'DB_phone_number')
+        self.sid=config.get('Credentials', 'DB_SID')
+        self.token=config.get('Credentials', 'DB_TOKEN')
         
     def amount_calculator(self,total_hours):
         
